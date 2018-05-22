@@ -1,0 +1,22 @@
+{
+  "name":"Konigreich",
+  "description":"Gerador de personagens / reinos",
+  "authors":[
+    {
+      "name":"William J. Venancio",
+      "email":"william.jvenancio@gmail.com"
+    }
+  ],
+  "require":{
+    "php":">=7.0",
+    "kint-php/kint":"~2.2",
+    "eftec/bladeone":"~2.3",
+    "leafo/scssphp":"~0.7.5",
+    "sergej-kurakin/diceroller":"~2.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.1-dev"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+$main-color: #f96868;
+$side-color: #3f4a59;
+$break-mobile: 768px;
+
+@import "library/placeholders";
+@import "library/mixins";
+
+html{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body, html>body{
+  min-height: 100%;
+  background-color: #f0f1fa;
+}
+
+#login .card .card-header{
+  margin: 0 -15px;
+  padding: 12px 35px;
+
+  h1{
+    font-size: 1.82rem;
+    padding-top: 8px;
+  }
+}
+
+
+
+.container.full-size, .row.full-size{
+  width: 100%;
+  height: 100%;
+}
+
+section.main{
+  position: absolute;
+  left: 290px;
+  right: 30px;
+  top: 94px;
+  bottom: 30px;
+
+  .card{
+    padding: 20px;
+    display: inline-block;
+    &>.card-header{
+      padding: 0 15px 0 15px;
+      margin: -5px -15px 0 -15px;
+      background-color: white;
+      &>.card-title{
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .card.full{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  table.table-view{
+    width: calc(100% + 30px);
+    display: table;
+    margin: -15px;
+
+    td{    padding: 12px;}
+    tbody td{
+      border-top: 1px solid #dee2e6;
+    }
+
+    .row-controls .btn-sm{
+      width: 32px;
+      height: 32px;
+      text-align: center;
+    }
+  }
+}
+
+.avatar img{
+  border-radius: 50%;
+}
+
+/** -- Header -- **/
+header#topbar{
+  height: 64px;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  .sidebar-header{
+    width: 260px;
+    height: 64px;
+    background-color: $main-color;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    padding: 0 12px;
+
+    &>.logo{
+      width: 100px;
+      height: 30px;
+      background-image: url('../img/logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      align-self: center;
+      flex-grow: 1;
+    }
+    &>.menu{
+      color: #fff;
+      align-self: center;
+      padding: 0 12px;
+    }
+  }
+
+  &>.view-site{
+    height: 64px;
+    display: flex;
+    padding: 0 12px;
+    float: right;
+    background-color: $side-color;
+    &>a{
+      padding: 0 12px;
+      align-self: center;
+      color: white;
+    }
+  }
+}
+
+
+/** -- Sidebar -- **/
+aside#sidebar{
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  width: 260px;
+
+  background-color: $side-color;
+  color: #fff;
+
+  a { color: white; }
+  hr{ border-color: white;}
+
+  &>nav>ul{
+    padding: 0;
+    list-style: none;
+  }
+
+  a.menu-opt{
+    &:hover{
+      background-color: rgba(0,0,0,0.1);
+      text-decoration: none;
+      transition: 0.2s linear;
+    }
+    &.active{
+      color: $main-color;
+      background-color: rgba(0,0,0,0.1);
+    }
+
+    i{
+      margin-right: 5px;
+    }
+  }
+}
+
+a.menu-opt{
+  display: block;
+  height: 56px;
+  padding: 0 12px;
+  line-height: 56px;
+}
+
+.menu-cat{
+  height: 28px;
+  border-bottom: 1px dashed white;
+  margin-bottom: 28px;
+  &::before{
+    content: attr(data-title);
+    display: inline-block;
+    padding: 14px 24px 14px 12px;
+    background-color: $side-color;
+  }
+}
+
+/** -- Seções -- **/
+section#login{
+  height: 92.5vh;
+}
