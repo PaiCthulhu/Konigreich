@@ -45,7 +45,7 @@ class Attribute {
         return $this->setValue($value);
     }
 
-    private function val(){
+    function val(){
         return $this->value;
     }
 

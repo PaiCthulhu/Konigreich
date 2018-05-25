@@ -6,7 +6,9 @@ use AdmBereich\Controller;
 class Main extends Controller{
 
     function index(){
-        dump(NPC::make());
+        $char = NPC::make();
+        $char->statBlock();
+        dump($char);
         echo '<ul>';
         Console::render();
         echo '</ul>';

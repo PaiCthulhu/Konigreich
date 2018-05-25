@@ -33,5 +33,9 @@ class Dict {
             'abbv'=>'Car',
             'null'=>false
         ]
+    ],
+        GENDERS = [
+            'male'=>'Masculino',
+            'female'=>'Feminino'
     ];
 }

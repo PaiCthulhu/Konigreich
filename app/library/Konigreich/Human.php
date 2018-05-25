@@ -52,4 +52,8 @@ class Human extends Humanoid implements Race{
         $this->age = $age;
         return $this;
     }
+
+    function getGenderName(){
+        return Dict::GENDERS[$this->gender];
+    }
 }

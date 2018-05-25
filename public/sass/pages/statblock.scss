@@ -1,0 +1,17 @@
+.statblock{
+  width: 450px;
+  font-family: 'Varela', sans-serif;
+
+  header{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(207,226,243);
+    padding: 3px;
+  }
+  .divider {
+    font-size: 12px;
+    border-top: solid thin;
+    border-bottom: solid thin;
+    text-transform: uppercase;
+  }
+}

@@ -1,1 +1,1 @@
-{"version":3,"file":"\/konigreich\/public\/css\/style.min.css","sourceRoot":"\/konigreich\/public\/sass\/","sources":["style.scss"],"names":[],"mappings":"AAAD"}
+{"version":3,"file":"\/Konigreich\/public\/css\/style.min.css","sourceRoot":"\/Konigreich\/public\/sass\/","sources":["style.scss","C:\/xampp\/htdocs\/Konigreich\/public\/sass\/pages\/statblock.scss"],"names":[],"mappings":"AAAD,iBAAA,ACAA,WAAA,4CAAA,AAAA,CAIG,kBAAA,oEAAA,AAAA,CAMA,oBAAA,sFAAA,AAAA"}
